@@ -1,0 +1,356 @@
+html body{
+    margin: 0;
+    padding:0;
+}
+body{
+  background-image: url(../../assets/background-photo.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.horizontal-row::after{
+    content:"";
+    display: block;
+    clear:both;
+
+}
+
+div.logo{
+    background: cyan;
+}
+
+.col-25, .col-50, .col-75{
+    float:left;
+}
+
+.col-25{
+    width: 25%;
+}
+
+.col-50{
+    width: 50%;
+}
+
+.col-75{
+    width: 75%;
+}
+
+header{
+    background: black;
+    padding:15px;
+
+}
+
+input[type=search] {
+    height:40px;
+    border-radius: 8px;
+    width:20%
+}
+
+input[type=search]:focus{
+    border: 1px solid lightblue;
+    outline:none;
+}
+
+.title{
+    font-size: 24px;
+    color:white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+table{
+    margin: 0 auto;
+}
+
+nav{
+    height:50px;
+    text-align: right;
+    background: lightgray;
+}
+
+nav a{
+    padding-right: 20px;
+    font-size: 20px;
+}
+
+.center{
+    text-align: center;
+}
+
+ .loader-gif{
+    width:50%
+} 
+
+.Body{
+    text-align: center;
+    background: aliceblue;
+    padding-top: 50px;
+    height:400px;
+}
+
+.modal-window{
+    position: fixed;
+	font-family: Arial, Helvetica, sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+	opacity:1;
+	transition: opacity 1000ms ease-in;
+}
+
+.modal-box{
+    width: 40%;
+	position: relative;
+	margin: 15% auto;
+	padding: 10px 20px;
+	border-radius: 4px;
+    background: white;
+    height:auto;
+    animation: slideInFromTop;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+@keyframes slideInFromTop {
+
+    from{
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+.close-btn{
+    background: #F3512A;
+    border-radius:2px;
+    float:right;
+    border:none;
+}
+
+.save-btn{
+     background: #1abc9c;
+     color:white;
+}
+
+.extended-home{
+margin-top: 100px;
+}
+
+.modal-box form{
+    margin:25px;
+}
+
+
+.modal-box table tr:last-child{
+text-align: center;
+}
+
+form input{
+    width:100%
+}
+
+.tileDiv{
+    display: flex;
+    padding: 10px;
+    height: 20em;
+    flex-direction: column;
+    margin: 50px 20px;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid rgba(0,0,0,0.2);
+    box-shadow: 0px 2px 11px 1px rgba(0,0,0,0.2);
+    border-radius: 15px;
+    background: white;
+}
+.tileDiv a{
+    height: 100%
+}
+.tileDiv:hover {
+    box-shadow: 0px 10px 45px 5px rgba(0,0,0,0.2);
+    transform: scale(1.02)
+}
+.body-container{
+    margin:50px;
+}
+.links{
+    display: flex;
+    height: 7vh;
+    margin: 15px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.nav-link{
+    width:15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    transition: all 0.3s ease-out;
+    background: #1abc9c;
+    margin: 10px;
+    border-radius: 5px;
+}
+.nav-link a{
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+}
+.nav-link:hover{
+    background: #1EA489;
+    transform: scale(1.05);
+}
+
+.horizontal-row form{
+    float:left;
+}
+
+.horizontal-row button{
+    float:right;
+}
+.tileContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.img-wrap{
+    width:100%;
+    height: 75%;
+}
+.img-wrap>img{
+    max-width: 100%;    
+    max-height: 100%;
+}
+.main-logo{
+    color: #2c3e50;
+}
+.text-caption{
+    margin: 10px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.caption-bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+table>tbody>tr>td{
+    padding: 5px;
+}
+.info-title{
+    width: 10%;
+    font-weight: 700;
+    opacity: 0.9;
+}
+.info-desc{
+    border-left: 5px solid rgba(26, 188, 156,1.0);
+    background: rgba(26, 188, 156,0.2);
+}
+table>tbody>tr>td>button{
+    margin: 10px;
+    padding: 5px 20px;
+    font-size: 16px;
+    background: transparent;
+    border: 1px solid #16a085;
+    color: #16a085;
+    transition: all 0.3s ease-in-out;
+}
+table>tbody>tr>td>button:hover{
+    background: #16a085;
+    color: white;
+}
+table>tbody>tr>td>input{
+    border: none;
+    border-left: 5px solid #16a085;
+    background: rgba(26, 188, 156,0.2);
+    padding: 5px;
+}
+table>tbody>tr>td>textarea{
+    border: none;
+    border-left: 5px solid #16a085;
+    background: rgba(26, 188, 156,0.2);
+    padding: 5px;
+    height: 130px;
+    width: 100%
+}
+.main-div{
+    margin-top:5%;
+    border: 1px solid rgba(0,0,0,0.09);
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.09);
+    padding: 10px;
+    background: white;
+}
+.srchImg{
+    vertical-align: middle;
+    margin-left:10px;    
+}
+
+footer{
+    width: 100%; 
+    background-image: none;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-position: 0% 0%;
+    position: fixed;
+    bottom: 0pt;
+    left: 0pt;
+    color:wheat;
+    background: black;
+}
+
+.search-bar{
+    margin-top: 20px;
+}
+.footer_contents {
+
+    height:24px; // Replace with the height your footer should be
+    width: 1000px; // Visible width of footer
+    margin:auto;
+
+}
+
+@media screen and (max-width:768px){   
+    .col-25,.col-50 {
+        width: 100%;
+    }
+
+    
+    .body-container{
+        margin:0px;
+    }
+
+    .modal-box{
+        width:70%
+    }
+    table>tbody>tr>td{
+        font-size: 10px;
+    }
+    table>tbody>tr>td>input{
+        font-size: 10px;
+    }
+    .modal-box>form{
+        margin: 25px 0;
+    }
+     .loader-gif{
+        width:100%
+    }   
+    
+    input[type=search] {
+        margin-top:20px;
+        width:75%;
+    }
+
+    .tileDiv{
+        margin: 20px 20px;
+    }
+    body {
+    background-image: url(../../assets/background-photo-mobile-devices.jpg);
+  }
+
+}
